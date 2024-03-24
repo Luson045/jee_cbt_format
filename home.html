@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box1">
+    <a href="https://luson045.github.io/portfolio/" target="_blank"><img style="height:40px;width:100px;" src="images/navbar.png"></a>
+  </div>
+  <hr>
+  <p class="a1" >welcome!</p>
+  <p class="a1">INSTRUCTIONS</p>
+  <div id="instruction">
+    <p class="a1"> Please read the instruction carefully</p>
+    <p>1|Duration is 3 hrs(4hrs for PwD)</p>
+    <p>2|countdown timer will appear on the top-right corner(once the time is over the answers will be automatically submitted)</p>
+    <p>3|The question palette on the right side will show the status of each question using one of the following symbol</p>
+    <div class="opt"><div style="border:1px solid black;width:15px;">1</div>&emsp13;You have not visited the question yet</div>
+    
+    <div class="opt"><div style="border:1px solid black;background-color: red;color: aliceblue;width:15px;">2</div>&emsp13;You have not answered the question</div>
+
+    <div class="opt"><div style="border:1px solid black;width:15px;background-color: greenyellow;color: aliceblue;">3</div>&emsp13;You have answered the question</div>
+
+    <div class="opt"><div style="border:1px solid black;width:15px;background-color: purple;color: aliceblue;">4</div>&emsp13;You have NOT answered the question but marked it for review</div>
+
+    <div class="opt"><div style="border:1px solid black;width:15px;background-color: purple;color: greenyellow;">5🟢</div>&emsp13;You have "ANSWERED AND MARKED FOR REVIEW" this question.(It will be considered while evaluation)</div>
+
+    <p>4|You can click the '>' arrow which appears on the left of question pallete to collapse the question palette, thereby maximizing the question window.To view the question palette you can click on '<' on the left</p>
+    <p>5|You can change the language of the question paper by clicking on your profile in the top-left cornet and select your preferred language</p>
+    <p>6|You can use 🔽 button to go to bottom of question and🔼 to move to top, else you can just scroll..(it's way simpler than using those buttons:)</p>
+    <p class="a1" >More buttons:</p>
+    <div class="opt"><div style="border:1px solid black;background-color: greenyellow;color: black;">Save & Next</div>&emsp13;Save your answer and move to next question</div>
+
+    <div class="opt"><div style="border:1px solid black;background-color: yellow;color: black;">Save & Mark for Review</div>&emsp13;Save your answer and moare the question so you can recheck later</div>
+
+    <div class="opt"><div style="border:1px solid black;background-color: white;color: black;">Clear Response</div>&emsp13;Removes your answer, Note that you most enter your new answer after it, else it will be marked as undone</div>
+
+    <div class="opt"><div style="border:1px solid black;background-color: rgb(127, 127, 243);color: black;">Mark for Review & Next</div>&emsp13;Answer wont be saved and question will be marked for you to recheck later</div>
+
+    <p class="a1" >Answering Single choice question:</p>
+    <p>1|To answer the MCQ press on your desired option</p>
+    <p>2|Click Save & Next(REMEMBER TO DO THIS ELSE IF YOU MOVE DIRECTLY TO NEXT QUESTION YOUR ANSWER WON'T BE SAVED)</p>
+    <p>3|Use clear response to remove your selection(AND DONT WORRY YOU CAN ANSWER AGAIN EVEN AFTER SAVING) </p>
+    <p>use the question palette on the right to jump between question</p>
+  </div>
+  <p class="a1">YOU WILL ALSO GET THE QUESTIONS INSTRUCTION HERE,(LIKE HOW MANY QUESTIONS IN EACH SUBJECT AND WHAT KIND OF QUSTIONS AND ALL THAT)</p>
+  <p class="a1" style="color:red;">Note:once the timer is below 5, a proceeed button will appear</p>
+  <div class="container2">
+    <a id="main">Exam will start in 2 mins, till then read the instruction:<a id="timer" style="color:red;">120</a> seconds remaining</a>
+    <a id="s" href="main.html">PROCEED</a>
+  </div>
+  <script>
+    var timer=120
+    var x = setInterval(function() {
+      timer=timer-1
+      document.getElementById("timer").innerHTML =timer;
+    
+      // If the count down is finished, write some text
+      if (timer < 5) {
+        clearInterval(x);
+        document.getElementById("s").style.display = "block";
+        document.getElementById("main").innerHTML ="You can start now";
+      }
+    }, 1000);
+    </script>
+</body>
+</html>

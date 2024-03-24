@@ -1,0 +1,106 @@
+#f1{
+  color: aliceblue;
+  border-radius: 10px;
+  padding:15px;
+  width:400px;
+  background-color: rgb(106, 46, 248);
+  text-align: center;
+  font-size: larger;
+  input{
+    height:20px;
+    width:80%;
+  }
+}
+.container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box1{
+  color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: baseline;
+  a{
+    font-size: x-large;
+    font-weight: bolder;
+  }
+}
+#s{
+  text-decoration: none;
+  background-color: blueviolet;
+  color:white;
+  padding: 10px;
+  display: none;
+}
+.opt{
+  display: flex;
+}
+.a1{
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+.box2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: baseline;
+  #timer{
+    position:absolute;
+    right:0;
+    border-radius: 7px;
+    background-color: rgb(108, 173, 242);
+    color:white;
+  }
+}
+#mbox{
+  display: flex;
+  gap:50px;
+}
+#r{
+  display: flex;
+  flex-direction: row;
+}
+#qpanal{
+  width:80%;
+}
+#r{
+  button{
+    height:30px;
+    width:30px;
+  }
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+}
+.submit{
+  height: 30px;
+  width:70px;
+  border-radius: 10px;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color:white;
+  }
+}
+.submit:hover{
+  cursor: pointer;
+}
+table{
+  border: 2px solid black;
+  td{
+    border:1px solid black;
+  }
+}
+#summary{
+  align-items: center;
+}
